@@ -1,0 +1,137 @@
+/* Select all elements */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Set background color */
+body {
+    background-color: #d9dcd6;
+}
+
+/* Navigation bar */
+nav {
+    padding: 10px 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-brand {
+    display: inline-block;
+    font-size: 36px;
+}
+
+.seo {
+    color: lightgrey;
+}
+
+.nav-links {
+    padding: 10px 0px 0px;
+    letter-spacing: .5px;
+    word-spacing: 2px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+/* Header Image */
+#marketing {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Main content */
+main {
+    width: 65%;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+/* Main sections */
+.main {
+    margin-bottom: 30px;
+        padding: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.main-img-left {
+    max-height: 180px;
+    float: left;
+    margin-right: 35px;
+}
+
+.main-img-right {
+    max-height: 180px;
+    float: right;
+    margin-left: 35px;
+}
+
+.main-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+    max-width: 75ch;
+}
+
+/* Benefits aside */
+aside {
+    margin-right: 30px;
+    padding: 35px 0px;
+    clear: both;
+    float: right;
+    width: 28%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2a607c;
+}
+
+/* Benefits sections */
+.benefits {
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.benefits-heading {
+    text-align: center;
+    font-size: 24px;
+}
+
+.benefits-img {
+    display: block;
+    margin: 25px auto;
+    max-width: 150px;
+    float: left;
+}
+    
+.benefits-text {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+    margin: 40px 45px 50px 0px;
+    max-width: 65ch;
+}
+
+/* Footer copyright */
+footer {
+    padding-bottom: 30px;
+    clear: both;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
