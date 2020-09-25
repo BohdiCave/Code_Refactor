@@ -8,6 +8,8 @@ The main goals consisted in:
 - Fixing any broken links within the page
 - Improving the layout and overall look of the page (sticky navigation bar, color scheme, positioning, etc.)
 
+Additionally, I later refactored the code once again with a consistent flexbox grid to ensure cross-device responsiveness. 
+
 Below, there are screenshots of the BEFORE and AFTER look of the site. 
 
 # Link to the finished product
