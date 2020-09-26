@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
     <title>HoriSEOn Solutions</title>
 </head>
 
@@ -11,11 +14,16 @@
     <header class="row">
         <nav>
             <h1 class="nav-brand">Hori<span class="seo">seo</span>n</h1>
-            <ul>
-            <li><a href="#search-engine-optimization" class="nav-link">Search Engine Optimization</a></li>
-            <li><a href="#online-reputation-management" class="nav-link">Online Reputation Management</a></li>
-            <li><a href="#social-media-marketing" class="nav-link">Social Media Marketing</a></li>
-            </ul>
+            <div class="collapse" id="navToggle">
+                <ul>
+                    <li><a href="#search-engine-optimization" id="nl1" class="nav-link">Search Engine Optimization</a></li>
+                    <li><a href="#online-reputation-management" id="nl2" class="nav-link">Online Reputation Management</a></li>
+                    <li><a href="#social-media-marketing" id="nl3" class="nav-link">Social Media Marketing</a></li>
+                </ul>
+            </div>
+            <button type="button" class="nav-toggler" data-toggle="collapse" aria-controls="#navToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="nav-toggler">Menu</span>
+            </button>
         </nav>
     </header>
     <section class="row" id="header-image">
@@ -26,21 +34,21 @@
     <main class="row">
         <section class="col" id="main">
             <div id="search-engine-optimization" class="box">
-                <img src="./assets/images/search-engine-optimization.jpg" class="main-img-left" alt="">
+                <img src="./assets/images/search-engine-optimization.jpg" class="main-img left" alt="">
                 <h1 class="main-heading">Search Engine Optimization</h1>
                 <div class="main-text">
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
                 </div>
             </div>
             <div id="online-reputation-management" class="box">
-                <img src="./assets/images/online-reputation-management.jpg" class="main-img-right" alt="">
+                <img src="./assets/images/online-reputation-management.jpg" class="main-img right" alt="">
                 <h1 class="main-heading">Online Reputation Management</h1>
                 <div class="main-text">
                 The web is full of opinions, some of them quite negative. Social media allows anyone with an internet connection to say whatever they want about your business. With Online Reputation Management, you can gain control over what potential customers see when searching for your business.
                 </div>
             </div>
             <div id="social-media-marketing" class="box">
-                <img src="./assets/images/social-media-marketing.jpg" class="main-img-left" alt="">
+                <img src="./assets/images/social-media-marketing.jpg" class="main-img left" alt="">
                 <h1 class="main-heading">Social Media Marketing</h1>
                 <div class="main-text">
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
@@ -84,6 +92,21 @@
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </div>
     </footer>
+
+    <script>
+    
+        var collapse = document.querySelector(".collapse");
+        var toggleBtn = document.querySelector("#nav-toggler");
+        function toggleMenu() {
+            if (collapse.style.display === "flex") {
+                collapse.style.display = "none";
+            } else {
+                collapse.style.display = "flex";
+            }
+        }
+        toggleBtn.addEventListener("click", toggleMenu);
+    
+    </script>
 </body>
 
 </html>
